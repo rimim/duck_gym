@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +15,21 @@
       justify-content: center;
       height: 100vh;
     }
-    video {
+    video, img {
       width: 100%;
       height: auto;
-      max-height: 100vh;
+      max-height: 50vh;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>Latest Duck Video - model_250.pt (2024-08-28 15:55:34)</h1>
+  <h1>Latest Duck Video</h1>
+  <h2>model_250.pt (2024-08-28 15:55:34)</h2>
   <video controls autoplay loop muted>
     <source src="https://github.com/rimim/duck_gym/raw/main/duck.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <img src="https://raw.githubusercontent.com/rimim/duck_gym/main/plot.png" alt="Duck Plot">
 </body>
 </html>
