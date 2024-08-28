@@ -49,27 +49,22 @@
     <img src="https://raw.githubusercontent.com/rimim/duck_gym/main/plot.png" alt="Duck Plot">
   </a>
   <script>
-    // Get the video element
     const video = document.querySelector('video');
-
-    // Add a click event listener to toggle fullscreen
     video.addEventListener('click', function() {
       if (!document.fullscreenElement) {
-        // Request fullscreen if not already in fullscreen mode
         if (video.requestFullscreen) {
           video.requestFullscreen();
-        } else if (video.webkitRequestFullscreen) { // Safari
+        } else if (video.webkitRequestFullscreen) {
           video.webkitRequestFullscreen();
-        } else if (video.msRequestFullscreen) { // IE11
+        } else if (video.msRequestFullscreen) {
           video.msRequestFullscreen();
         }
       } else {
-        // Exit fullscreen mode if already in fullscreen
         if (document.exitFullscreen) {
           document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) { // Safari
+        } else if (document.webkitExitFullscreen) {
           document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) { // IE11
+        } else if (document.msExitFullscreen) {
           document.msExitFullscreen();
         }
       }
