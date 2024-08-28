@@ -7,13 +7,13 @@
   <meta http-equiv="refresh" content="600">
   <style>
     body {
-      margin: 10px;
+      margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       height: 100vh;
+      box-sizing: border-box;
     }
     video {
       width: 100%;
@@ -31,8 +31,14 @@
       display: block; /* Ensures the image link is treated as a block-level element */
       width: 100%;
     }
+    h2 {
+      margin: 0; /* Removes any default margin */
+      padding: 0 10px; /* Adds some padding if desired */
+      text-align: center; /* Centers the text */
+    }
   </style>
-</head><body>
+</head>
+<body>
   <video controls autoplay loop muted>
     <source src="https://github.com/rimim/duck_gym/raw/main/duck.mp4" type="video/mp4">
     Your browser does not support the video tag.
