@@ -15,11 +15,21 @@
       justify-content: center;
       height: 100vh;
     }
-    video, img {
+    video {
       width: 100%;
       height: auto;
       max-height: 50vh;
       margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;  /* Maintain aspect ratio */
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    a {
+      display: block; /* Ensures the image link is treated as a block-level element */
+      width: 100%;
     }
   </style>
 </head>
@@ -30,6 +40,8 @@
     <source src="https://github.com/rimim/duck_gym/raw/main/duck.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <img src="https://raw.githubusercontent.com/rimim/duck_gym/main/plot.png" alt="Duck Plot">
+  <a href="https://raw.githubusercontent.com/rimim/duck_gym/main/plot.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/rimim/duck_gym/main/plot.png" alt="Duck Plot">
+  </a>
 </body>
 </html>
